@@ -4,7 +4,7 @@ Ini adalah repositori data yang digunakan pada makalah **Perbandingan distribusi
 
 Hanya 10,000 kata pertama saja dari setiap corpus yang ditampilkan di sini.
 
-Jika ingin menggunakan data yang tersedia di repositori ini, mohon cantumkan makalah berikut sebagai referensi.
+Jika ingin menggunakan data yang tersedia di repositori ini dalam makalah Anda, mohon cantumkan makalah berikut dalam referensi.
 
 > Ivan Lanin, Jim Geovedi, Wicak Soegijoko. **Perbandingan distribusi frekuensi kata bahasa Indonesia di Kompas, Wikipedia, Twitter, dan Kaskus**. KOLITA11, 2013.
 
