@@ -3,24 +3,8 @@
 
 import codecs
 import matplotlib.pyplot as plt
-import functools
+import numpy as np
 from nltk import FreqDist
-
-maxfreq = 10**6
-
-
-class funcobj(object):
-    def __init__(self, mylen, f, *args, **kwargs):
-        self.f = functools.partial(f, *args, **kwargs)
-        self.mylen = mylen
-    def __getitem__(self, idx):
-        return self.f(idx + 1)
-    def __len__(self):
-        return self.mylen
-
-
-def zipf(k, rank):
-    return k / rank
 
 
 def main():
@@ -39,14 +23,15 @@ def main():
 
         plt.loglog(ranks, freqs, label=corpus)
 
-    plt.loglog(ranks, funcobj(len(ranks), zipf, maxfreq), 
-               label='zipf\'s law')
+        plt.loglog(ranks, 
+                   list(reversed(sorted(np.random.zipf(2., len(ranks))))), 
+                   label=corpus + '/zipf')
 
     plt.grid(True)
     plt.xlabel('rank', fontsize=14, fontweight='bold')
     plt.ylabel('frequency', fontsize=14, fontweight='bold')
     plt.legend(loc='upper right')
-    plt.savefig('freqdist.png')
+    plt.savefig('freqdist-zipf.png')
 
 if __name__ == '__main__':
     main()
