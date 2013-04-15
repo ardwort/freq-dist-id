@@ -15,16 +15,17 @@ def main():
 
         ranks = []
         freqs = []
-
         for rank, word in enumerate(fd):
             ranks.append(rank + 1)
             freqs.append(fd[word])
 
-        plt.loglog(ranks, freqs)
-        plt.xlabel('frequency(f)', fontsize=14, fontweight='bold')
-        plt.ylabel('rank(r)', fontsize=14, fontweight='bold')
         plt.grid(True)
+        plt.loglog(ranks, freqs, label=corpus)
+        plt.xlabel('rank', fontsize=14, fontweight='bold')
+        plt.ylabel('frequency', fontsize=14, fontweight='bold')
+        plt.legend(loc='upper right')
         plt.savefig(corpus + '.png')
+        plt.close()
 
 if __name__ == '__main__':
     main()
