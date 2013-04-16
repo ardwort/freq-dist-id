@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -82,7 +86,7 @@ ax = fig.add_subplot(111)
 
 for i, corpus in enumerate(corpora.keys()):
     ax.bar(pos - step + i * width_bar, corpora[corpus], width_bar,
-           facecolor=color_list[i], label=corpus)
+           facecolor=color_list[i], label=corpus, linewidth=0)
 
 ax.set_xticks(pos)
 ax.set_xticklabels(words, fontsize=10, multialignment='center')

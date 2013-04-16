@@ -32,6 +32,8 @@ def main():
     plt.ylabel('frequency', fontsize=14, fontweight='bold')
     plt.legend(loc='upper right')
     plt.savefig('freqdist-zipf.png')
+    plt.close()
+
 
 if __name__ == '__main__':
     main()
