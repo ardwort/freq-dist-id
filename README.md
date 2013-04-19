@@ -14,9 +14,10 @@ Frekuensi penggunaan kata dalam sebuah tulisan maupun percakapan sangat memengar
 
 ## Data Olahan
 
-Hanya 10,000 peringkat pertama kata saja dari setiap corpus yang ditampilkan di sini. 
 
 ### Corpora
+
+Hanya 10,000 peringkat pertama kata saja dari setiap corpus yang ditampilkan di sini. 
 
 * **idwiki** - 10,000 kata populer dari salinan situs Wikipedia bahasa Indonesia tanggal 15 Januari 2013.
     * idwiki.1gram - unigram (1-gram)
@@ -338,12 +339,17 @@ Hanya 10,000 peringkat pertama kata saja dari setiap corpus yang ditampilkan di 
 
 ### Diagram
 
+**Gambar 1**: Perbandingan distribusi frekuensi kemunculan kata
+
 ![Gambar 1: Perbandingan distribusi frekuensi kemunculan kata](https://raw.github.com/ardwort/freq-dist-id/master/freqdist.png)
+
+**Gambar 2**: Perbandingan peringkat frekuensi kemunculan kata
 
 ![Gambar 2: Perbandingan peringkat frekuensi kemunculan kata](https://raw.github.com/ardwort/freq-dist-id/master/top10-words.png)
 
-![Gambar 3: Perbandingan distribusi jumlah huruf per kata](https://raw.github.com/ardwort/freq-dist-id/master/chars.png)
+**Gambar 3**: Perbandingan distribusi jumlah huruf per kata
 
+![Gambar 3: Perbandingan distribusi jumlah huruf per kata](https://raw.github.com/ardwort/freq-dist-id/master/chars.png)
 
 
 ## Publikasi
