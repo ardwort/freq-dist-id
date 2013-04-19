@@ -19,16 +19,16 @@ Hanya 10,000 peringkat pertama kata saja dari setiap corpus yang ditampilkan di 
 
 * **idwiki** - 10,000 kata populer dari salinan situs Wikipedia bahasa Indonesia tanggal 15 Januari 2013.
     * idwiki.1gram - unigram (1-gram)
-    * idwiki.csv - perhitungan kemunculan dan persentase Kemunculan Kata
+    * idwiki.csv - perhitungan kemunculan dan persentase kemunculan kata
 * **kaskus** - 10,000 kata populer dari 1,000 *threads* terakhir sub-forum "The Lounge" pada situs forum Kaskus, yang diambil pada bulan Januari 2013.
     * kaskus.1gram - unigram (1-gram)
-    * kasku.csv - perhitungan kemunculan dan persentase Kemunculan Kata
+    * kasku.csv - perhitungan kemunculan dan persentase kemunculan kata
 * **kompas** - 10,000 kata populer dari arsip berita tahun 2012 situs berita Kompas.
     * kompas.1gram - unigram (1-gram)
-    * kompas.csv - perhitungan kemunculan dan persentase Kemunculan Kata
+    * kompas.csv - perhitungan kemunculan dan persentase kemunculan kata
 * **twitter** - 10,000 kata populer dari situs mikroblog Twitter untuk percakapan bulan Oktober-Desember 2012 oleh pengguna Twitter yang berlokasi di Indonesia.
     * twitter.1gram - unigram (1-gram)
-    * twitter.csv - perhitungan kemunculan dan persentase Kemunculan Kata
+    * twitter.csv - perhitungan kemunculan dan persentase kemunculan kata
 
 
 
