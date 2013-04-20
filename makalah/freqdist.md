@@ -68,28 +68,28 @@ untuk $k$ sebagai konstanta faktor.
 
 Jumlah keseluruhan kata dari keempat korpus adalah sebanyak 220.331.474 kata dengan distribusi jumlah kata unik dan jumlah keseluruhan kata per korpus disajikan pada tabel 1. Karena keterbatasan tempat, tabel penghitungan yang ditampilkan dalam makalah ini dibatasi hanya 20 kata teratas dari masing-masing korpus (Tabel 2). Data contoh yang lebih besar tersedia daring di repositori [Github](https://github.com/ardwort/freq-dist-id). 
 
-No|Kompas  |%   |Wikipedia|%   |Twitter|%   |Kaskus|%   
---|--------|----+---------|----|-------|----|------|----
-1 |yang    |2,42|yang     |2,23|di     |1,16|gan   |4,80
-2 |di      |2,16|dan      |2,21|yg     |0,80|ane   |2,20
-3 |dan     |1,92|di       |2,10|ya     |0,77|di    |1,19
-4 |ini     |1,01|pada     |1,00|aku    |0,71|yang  |1,09
-5 |itu     |0,95|dari     |0,98|yang   |0,69|yg    |1,03
-6 |dengan  |0,95|dengan   |0,92|ini    |0,68|ya    |0,99
-7 |untuk   |0,90|ini      |0,79|itu    |0,67|ada   |0,85
-8 |dari    |0,85|adalah   |0,74|ada    |0,66|itu   |0,78
-9 |dalam   |0,67|dalam    |0,71|d      |0,61|tuh   |0,75
-10|akan    |0,61|untuk    |0,68|aja    |0,49|aja   |0,73
-11|pada    |0,60|kategori |0,64|ga     |0,48|bisa  |0,70
-12|tidak   |0,60|tahun    |0,63|dan    |0,47|juga  |0,68
-13|juga    |0,46|sebagai  |0,47|gak    |0,46|kalo  |0,64
-14|ke      |0,44|oleh     |0,45|i      |0,43|keren |0,62
-15|tersebut|0,41|indonesia|0,42|mau    |0,41|ga    |0,62
-16|ada     |0,37|ke       |0,39|ke     |0,41|banget|0,59
-17|bisa    |0,35|the      |0,34|udah   |0,41|nya   |0,56
-18|saat    |0,35|ia       |0,32|lagi   |0,40|wah   |0,53
-19|jakarta |0,34|tidak    |0,31|kalo   |0,38|nih   |0,50
-20|tahun   |0,33|menjadi  |0,30|the    |0,37|jadi  |0,50
+No|Kompas  |%    |Wikipedia|%    |Twitter|%    |Kaskus|%   
+--|--------|-----+---------|-----|-------|-----|------|-----
+1 |yang    |2,429|yang     |2,239|di     |1,162|gan   |4,808
+2 |di      |2,168|dan      |2,214|yg     |0,803|ane   |2,202
+3 |dan     |1,923|di       |2,107|ya     |0,778|di    |1,194
+4 |ini     |1,017|pada     |1,007|aku    |0,719|yang  |1,097
+5 |itu     |0,958|dari     |0,987|yang   |0,690|yg    |1,034
+6 |dengan  |0,953|dengan   |0,927|ini    |0,682|ya    |0,998
+7 |untuk   |0,907|ini      |0,791|itu    |0,670|ada   |0,854
+8 |dari    |0,858|adalah   |0,749|ada    |0,669|itu   |0,786
+9 |dalam   |0,679|dalam    |0,714|d      |0,613|tuh   |0,758
+10|akan    |0,610|untuk    |0,689|aja    |0,498|aja   |0,739
+11|pada    |0,609|kategori |0,649|ga     |0,481|bisa  |0,701
+12|tidak   |0,604|tahun    |0,633|dan    |0,470|juga  |0,680
+13|juga    |0,463|sebagai  |0,476|gak    |0,469|kalo  |0,642
+14|ke      |0,449|oleh     |0,457|i      |0,435|keren |0,626
+15|tersebut|0,410|indonesia|0,426|mau    |0,412|ga    |0,624
+16|ada     |0,378|ke       |0,390|ke     |0,410|banget|0,599
+17|bisa    |0,359|the      |0,349|udah   |0,410|nya   |0,567
+18|saat    |0,352|ia       |0,322|lagi   |0,405|wah   |0,532
+19|jakarta |0,344|tidak    |0,318|kalo   |0,389|nih   |0,508
+20|tahun   |0,337|menjadi  |0,303|the    |0,379|jadi  |0,502
 
 
 Table: Peringkat dan persentase kemunculan kata

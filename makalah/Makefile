@@ -9,11 +9,12 @@ PANDOC_ARGS = -H kolita11.sty --bibliography $(BIBTEX) \
 CONVERT = convert
 CONVERT_ARGS = -density 250 -units PixelsPerInch
 
-IMG_FILES := $(wildcard ../*.png)
-PDF_FILES := $(patsubst %.png, %.pdf, $(IMG_FILES))
+#IMG_FILES := $(wildcard ../*.png)
+#PDF_FILES := $(patsubst %.png, %.pdf, $(IMG_FILES))
+PDF_FILES := img-chars.pdf img-freqdist.pdf img-top10-words.pdf
 
-%.pdf: %.png
-	$(CONVERT) $(CONVERT_ARGS) $< $(patsubst ../%.pdf, ./img-%.pdf, $@) 
+#%.pdf: %.png
+#	$(CONVERT) $(CONVERT_ARGS) $< $(patsubst ../%.pdf, ./img-%.pdf, $@) 
 
 all: $(OUTFILE)
 
@@ -21,4 +22,4 @@ $(OUTFILE): $(PDF_FILES)
 	$(PANDOC) $(PANDOC_ARGS) $(INFILE) -o $(OUTFILE)
 
 clean:
-	rm -f $(patsubst ../%.pdf, img-%.pdf, $(PDF_FILES)) $(OUTFILE)
+	rm -f $(OUTFILE)
