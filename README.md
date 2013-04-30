@@ -361,6 +361,6 @@ Jika anda menggunakan data dan kode pemrograman yang terdapat dalam repositori i
 
 ## Kontak
 
-Hubungi Eric, jika Anda ingin mentraktir kami.
+Hubungi Erik, jika Anda ingin mentraktir kami.
 
-Gen Eric. <gen.eric@ardwort.com>
+Gen Erik. <gen.erik@ardwort.com>
