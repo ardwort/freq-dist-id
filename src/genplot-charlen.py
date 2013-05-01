@@ -13,7 +13,7 @@ def main():
 
     for corpus in corpora:
         fd = FreqDist()
-        for line in codecs.open(corpus + '.1gram-top10k', 'r', 'utf-8'):
+        for line in codecs.open('../data/' + corpus + '.1gram', 'r', 'utf-8'):
             (word, freq) = line.split('\t')
             fd[len(word)] += int(freq.strip())
 

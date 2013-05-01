@@ -341,15 +341,15 @@ Hanya 10,000 peringkat pertama kata saja dari setiap corpus yang ditampilkan di 
 
 **Gambar 1**: Perbandingan distribusi frekuensi kemunculan kata
 
-![Gambar 1: Perbandingan distribusi frekuensi kemunculan kata](https://raw.github.com/ardwort/freq-dist-id/master/freqdist.png)
+![Gambar 1: Perbandingan distribusi frekuensi kemunculan kata](https://raw.github.com/ardwort/freq-dist-id/master/makalah/freqdist.png)
 
 **Gambar 2**: Perbandingan peringkat frekuensi kemunculan kata
 
-![Gambar 2: Perbandingan peringkat frekuensi kemunculan kata](https://raw.github.com/ardwort/freq-dist-id/master/top10-words.png)
+![Gambar 2: Perbandingan peringkat frekuensi kemunculan kata](https://raw.github.com/ardwort/freq-dist-id/master/makalah/top10-words.png)
 
 **Gambar 3**: Perbandingan distribusi jumlah huruf per kata
 
-![Gambar 3: Perbandingan distribusi jumlah huruf per kata](https://raw.github.com/ardwort/freq-dist-id/master/chars.png)
+![Gambar 3: Perbandingan distribusi jumlah huruf per kata](https://raw.github.com/ardwort/freq-dist-id/master/makalah/chars.png)
 
 
 ## Publikasi
