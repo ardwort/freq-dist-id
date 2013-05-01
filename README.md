@@ -367,7 +367,7 @@ Hanya 10,000 peringkat pertama kata saja dari setiap corpus yang ditampilkan di 
 }
 ```
 
-Jika anda menggunakan data dan kode pemrograman yang terdapat dalam repositori ini dalam sebuah publikasi, harap sertakan kutipan di atas.
+Jika anda menggunakan data dan kode pemrograman yang terdapat dalam repositori ini dalam sebuah publikasi, harap sertakan kutipan makalah di atas.
 
 
 ## Kontak
