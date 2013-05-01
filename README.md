@@ -354,7 +354,18 @@ Hanya 10,000 peringkat pertama kata saja dari setiap corpus yang ditampilkan di 
 
 ## Publikasi
 
-* Lanin, I., Geovedi, J., & Soegijoko. W. (2013). Perbandingan distribusi frekuensi kata bahasa Indonesia di Kompas, Wikipedia, Twitter, dan Kaskus. *Konferensi Linguistik Tahunan Atma Jaya 11 (KOLITA11)*.
+> Lanin, I., Geovedi, J., & Soegijoko. W. (2013). Perbandingan distribusi frekuensi kata bahasa Indonesia di Kompas, Wikipedia, Twitter, dan Kaskus. In Yanti (Ed.), Proceedings of Konferensi Linguistik Tahunan Atma Jaya Kesebelas (KOLITA11) (pp. 249-252).
+
+```
+@inproceedings{lanin-proc-kolita11-2013,
+    author      = {Ivan Lanin and Jim Geovedi and Wicak Soegijoko},
+    title       = {Perbandingan distribusi frekuensi kata bahasa Indonesia di Kompas, Wikipedia, Twitter, dan Kaskus},
+    year        = {2013},
+    booktitle   = {Proceedings of Konferensi Linguistik Tahunan Atma Jaya Kesebelas (KOLITA11)},
+    editor      = {Yanti},
+    pages       = {249--252}
+}
+```
 
 Jika anda menggunakan data dan kode pemrograman yang terdapat dalam repositori ini dalam sebuah publikasi, harap sertakan kutipan di atas.
 
