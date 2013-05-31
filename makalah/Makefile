@@ -22,4 +22,4 @@ $(OUTFILE): $(PDF_FILES)
 	$(PANDOC) $(PANDOC_ARGS) $(INFILE) -o $(OUTFILE)
 
 clean:
-	rm -f $(OUTFILE)
+	rm -f $(OUTFILE) *.aux *.log

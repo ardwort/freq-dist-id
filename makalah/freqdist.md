@@ -1,16 +1,12 @@
 % Perbandingan distribusi frekuensi kata bahasa Indonesia di Kompas, Wikipedia, Twitter, dan Kaskus
 % **Ivan Lanin**\
-  Ardwort\
-  Jakarta, Indonesia\
   `ivan@ardwort.com`
   **Jim Geovedi**\
-  Ardwort\
-  Jakarta, Indonesia\
   `jim@ardwort.com`
   **Wicak Soegijoko**\
-  Ardwort\
-  Jakarta, Indonesia\
   `wicak@ardwort.com`
+% Ardwort\
+  Jakarta, Indonesia
 
 **Abstrak**. Dalam bahasa yang sama, kata yang paling sering digunakan, jumlah huruf per kata, serta berbagai statistik lain yang terkait dengan distribusi frekuensi sangat bergantung kepada ragam yang digunakan. Makalah ini menelaah perbandingan distribusi frekuensi kata antara empat ragam bahasa Indonesia yang populer di internet, yaitu Kompas (media massa), Wikipedia bahasa Indonesia (ensiklopedia), Twitter (mikroblog), dan Kaskus (forum). Kajian dilakukan dengan menggunakan korpus yang diambil dari data yang tersedia secara publik di internet serta diproses dengan menggunakan bahasa pemrograman Python serta beberapa pustaka pemrograman yang bersumber terbuka. Hasil kajian menunjukkan adanya perbedaan distribusi yang cukup tajam di antara keempat ragam bahasa Indonesia ini. Kompas banyak menggunakan kata *akan* karena sifat beritanya; Wikipedia banyak menggunakan kata *adalah* karena sifat deskriptifnya; Twitter banyak menggunakan kata *aku* karena sifat subjektifnya; Kaskus banyak menggunakan kata *gan* yang merupakan kata khas komunitas ini. Kajian ini juga memberikan beberapa hal yang harus diperhatikan dalam kajian serupa seperti penyiapan dan pembersihan data korpus dan leksikon. Kajian ini diharapkan dapat memberikan dasar penelitian lebih lanjut dalam bidang distribusi frekuensi dan analisis korpus bahasa Indonesia.
 
@@ -23,6 +19,8 @@ Frekuensi penggunaan kata dalam sebuah tulisan maupun percakapan sangat memengar
 ## Metodologi
 
 Korpus yang digunakan untuk keperluan penelitian ini diperoleh dari 4 situs daring berbahasa Indonesia yang populer di internet, yaitu Kompas (media massa), Wikipedia bahasa Indonesia (ensiklopedia, selanjutnya disingkat Wikipedia), Twitter (mikroblog), dan Kaskus (forum). Keempat korpus ini dipilih sebagai bahan penelitian karena mewakili ragam bahasa yang berbeda. Informasi detail data korpus dipaparkan pada Tabel 1.
+
+Data mentah diperoleh melalui teknik scraping untuk situs Kaskus dan Kompas, ekstraksi salinan data XML dari Wikipedia, dan [*API query*](https://dev.twitter.com/docs/api/1.1) pada layanan Twitter. Data mentah tersebut selanjutnya dibersihkan dari kode HTML, nama pengguna (pada korpus Twitter dan Kaskus), templat atau pola acu (pada korpus Wikipedia), alamat URL (Uniform Resource Locator) internet, serta sebagian besar tanda baca, kecuali tanda hubung (“-”) pada kata ulang. Data korpus diproses dengan menggunakan bahasa pemrograman Python serta pustaka NLTK, NumPy, dan SciPy.
 
 +---------+-------------------------+--------+-----------+
 |         |Informasi                |  Jumlah|     Jumlah|
@@ -59,22 +57,20 @@ Table: Informasi Pengambilan Data Korpus
 [wiki]: http://dumps.wikimedia.org/idwiki/20130115/
 [kaskus]: http://www.kaskus.co.id/forum/21/
 
-Data mentah diperoleh melalui teknik scraping untuk situs Kaskus dan Kompas, ekstraksi salinan data XML dari Wikipedia, dan [*API query*](https://dev.twitter.com/docs/api/1.1) pada layanan Twitter. Data mentah tersebut selanjutnya dibersihkan dari kode HTML, nama pengguna (pada korpus Twitter dan Kaskus), templat atau pola acu (pada korpus Wikipedia), alamat URL (Uniform Resource Locator) internet, serta sebagian besar tanda baca, kecuali tanda hubung (“-”) pada kata ulang. Data korpus diproses dengan menggunakan bahasa pemrograman Python serta pustaka NLTK, NumPy, dan SciPy.
 
 Frekuensi kemunculan kata dihitung dengan menggunakan rumus dari  @Ramisch2011 yang menyatakan bahwa frekuensi (*fréquence*, $f$) merupakan hasil pembagian jumlah kemunculan suatu kata atau token (*nombre d’occurrences*, $C_w(\cdot)$) dengan jumlah total kata atau token ($n$). Sebagai contoh, berikut rumus penghitungan kemunculan kata *yang* dalam korpus data Wikipedia: 
-$$\Large f = \frac{C_w(\cdot)}{N}  = \frac{C_{wikipedia}(yang)}{N} = \frac{975156}{43545242}  = 0.02239408842876565$$
+$$f = \frac{C_w(\cdot)}{N}  = \frac{C_{wikipedia}(yang)}{N} = \frac{975156}{43545242}  = 0.02239408842876565$$
 
-
-Namun hasil perhitungan ini tidak dapat langsung digunakan sebagai model linguistik karena banyaknya kata yang jarang digunakan (*low-rank words*) memiliki frekuensi sama. Statistik suatu korpus data sangat bergantung pada besar korpus, jenis bahasa, dan ragam yang digunakan. Walaupun demikian, kaitan logaritmik antara jumlah kata (token) dan jumlah jenis kata (token) biasanya akan mengikuti Hukum Zipf [@Zipf1932; @Baayen2001]. Hukum Zipf menyatakan bahwa pada korpus data bahasa alami, peringkat ($r$) dari sebuah kata adalah berdasarkan frekuensinya ($f$) yang diformulakan menjadi
-$$\Large f \propto \frac{1}{r}$$
-dan formula ini  ekuivalen dengan 
-$$\Large f = \frac{k}{r}$$
+Namun hasil perhitungan ini tidak dapat langsung digunakan sebagai model linguistik karena banyaknya kata yang jarang digunakan (*low-rank words*) memiliki frekuensi sama. Statistik suatu korpus data sangat bergantung pada besar korpus, jenis bahasa, dan ragam yang digunakan. Walaupun demikian, kaitan logaritmik antara jumlah kata (token) dan jumlah jenis kata (token) biasanya akan mengikuti Hukum Zipf [@Zipf1932; @Baayen2001]. Hukum Zipf menyatakan bahwa pada korpus data bahasa alami, peringkat ($r$) dari sebuah kata adalah berdasarkan frekuensinya ($f$) yang diformulakan menjadi $f \propto \frac{1}{r}$ dan formula ini  ekuivalen dengan $f = \frac{k}{r}$
 untuk $k$ sebagai konstanta faktor.
 
 
 ## Hasil dan Analisis
 
 Jumlah keseluruhan kata dari keempat korpus adalah sebanyak 220.331.474 kata dengan distribusi jumlah kata unik dan jumlah keseluruhan kata per korpus disajikan pada Tabel 1. Karena keterbatasan tempat, tabel penghitungan yang ditampilkan dalam makalah ini dibatasi hanya 20 kata teratas dari masing-masing korpus (Tabel 2). Data contoh yang lebih besar tersedia daring di repositori [Github](https://github.com/ardwort/freq-dist-id). 
+
+\newpage
+
 
 No|Kompas  |%    |Wikipedia|%    |Twitter|%    |Kaskus|%   
 --|--------|-----+---------|-----|-------|-----|------|-----
@@ -105,15 +101,22 @@ Table: Peringkat dan persentase kemunculan kata
 
 Gambar-gambar di bawah ini memberikan ilustrasi dari analisis yang akan diuraikan selanjutnya.
 
-![Perbandingan distribusi frekuensi kemunculan kata][img-freqdist]
+\begin{figure}[!htb]
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{img-freqdist.pdf}
+  \caption{Perbandingan distribusi frekuensi kemunculan kata}\label{fig:img-freqdist}
+\endminipage\hfill
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{img-top10-words.pdf}
+  \caption{Perbandingan peringkat frekuensi kemunculan kata}\label{fig:img-top10-words}
+\endminipage\hfill
+\minipage{0.32\textwidth}%
+  \includegraphics[width=\linewidth]{img-chars.pdf}
+  \caption{Perbandingan distribusi jumlah huruf per kata}\label{fig:img-chars}
+\endminipage
+\end{figure}
 
-![Perbandingan peringkat frekuensi kemunculan kata][img-top10words]
 
-![Perbandingan distribusi jumlah huruf per kata][img-chars]
-
-[img-freqdist]: img-freqdist.pdf
-[img-top10words]: img-top10-words.pdf
-[img-chars]: img-chars.pdf
 
 ### Kata yang tersering digunakan
 
